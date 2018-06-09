@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
+        body {
+        margin: 5px auto;
+        width: 98%;
+        text-align: center;
+        font-family: 'Lato';
+        font-weight: 300;
+        }
+
+        h2 {
+        margin-top: 20px;
+        margin-bottom: 15px;
+        font-size: 2em;
+        }
+
+        .backdrop {
+        background: url('https://i.imgbox.com/k0AcjFmL.jpg');
+        background-size: cover;
+        height: 400px; 
+        margin-bottom: 40px;
+        position: relative;
+        filter: contrast(1.4) brightness(1.2);
+        }
+
+        .target {
+        position: absolute;
+        top: 0%;
+        height: 100%;
+        width: 20%;
+        opacity: 0;
+        cursor: crosshair;
+        }
+
+        .a {
+        backdrop-filter: hue-rotate(50deg);
+        }
+
+        .b {
+        left: 20%;
+        backdrop-filter: hue-rotate(110deg);
+        }
+
+        .c {
+        left: 40%;
+        backdrop-filter: hue-rotate(170deg);
+        }
+
+        .d {
+        left: 60%;
+        backdrop-filter: hue-rotate(230deg);
+        }
+
+        .e {
+        left: 80%;
+        backdrop-filter: hue-rotate(290deg);
+        }
+
+        .target:hover {
+        backdrop-filter: none;
+        }
+
+        p {
+        color: white;
+        font-size: 1.25em;
+        }
+
+        h3 {
+        color: white;
+        margin-bottom: 15px;
+        font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h2>Multiple Filters Side by Side</h2>
+    <div class="backdrop">
+        <div class="target a">
+        </div>
+        <div class="target b">
+        </div>
+        <div class="target c">
+        </div>
+        <div class="target d">
+        </div>
+        <div class="target e">
+        </div>
+    </div>
+</body>
+</html>
